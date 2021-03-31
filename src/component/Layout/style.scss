@@ -1,0 +1,103 @@
+@import '../../main.scss';
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+    overflow-x: hidden;
+}
+
+h2, h3, h4, h5, h6, p{
+    font-family: $special-font;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background: #3b3b3b56 !important;
+
+    nav{
+        padding: 0 !important;
+    }
+
+    .navbar-brand{
+        color: $special-color !important;
+        font-family: $special-font-2 !important;
+    }
+
+    .collapse{
+        .nav-link{    
+            letter-spacing: 2px;
+            
+            @media(min-width: 992px){
+                margin-top: 20px;
+                margin-left: 50px;
+
+                &:hover{
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                    transition: 0.3s;
+                    color: $special-color !important;
+                    cursor: pointer;
+                }
+            }
+            @media(max-width: 992px){
+                &:hover{
+                    margin-left: 30px;
+                    padding-left: 30px;
+                    transition: 0.3s;
+                    color: $special-color !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
+
+footer{
+    width: 100%;
+    margin-top: 600px;
+    background-color: $footer-color-1;
+
+    .row{
+        div{
+            text-align: center;
+        }
+
+        .list-group-item-action{
+            background-color: $footer-color-1;
+            color: $bg-color;
+            font-size: 20px;
+            padding: 0;
+            border: none;
+
+            &:hover{
+                color: $special-color;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .socials i{
+        color: $bg-color;
+        margin: 3px 8px;
+        font-size: 80px;
+
+        &:hover{
+            color: $special-color;
+            transition: 0.5s;
+        }
+    }
+
+    #copy{
+        background-color: $footer-color-2;
+    }
+
+    .footer-section-list p:hover{
+        cursor: pointer;
+    }
+}

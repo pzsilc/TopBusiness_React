@@ -1,4 +1,5 @@
 {
+  "homepage": "./",
   "name": "webbb",
   "version": "0.1.0",
   "private": true,
@@ -6,9 +7,15 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.2",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^17.0.1",
+    "react-hamburger-menu": "^1.2.1",
     "react-scripts": "4.0.3",
+    "react-simple-image-slider": "^2.0.3",
+    "react-slideshow-image": "^3.4.3",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
