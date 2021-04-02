@@ -15,7 +15,7 @@ main{
         height: 200px;
         top: 0;
         left: 0;
-        filter: brightness(50%);
+        filter: brightness(30%);
     }
 
     section{
@@ -48,15 +48,21 @@ main{
             font-size: 20px;
         }
 
+        textarea{
+            resize: none;
+        }
+
         .is-valid{
             border-bottom: solid 3px #28a745;
         }
 
         .btn-primary{
-            background: $special-color;
+            background: $bg-color;
+            color: $special-color;
             border-radius: 0;
-            border-color: $special-color;
+            border: solid 3px $special-color;
             width: 100%;
+            &:hover{ background: $special-color; color: $bg-color; }
         }
     }
 }
