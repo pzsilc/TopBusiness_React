@@ -115,7 +115,22 @@ const Footer = () => {
 
 
 
+const Loader = () => {
+    const loader = useRef();
+    useEffect(() => window.onload = () => $(loader.current).fadeOut())
+    return(
+        <div id='loader' ref={loader}>
+            <i className="fa fa-circle shift-animation-1" style={{ fontSize:'40px' }}></i>
+            <i className="fa fa-circle shift-animation-2" style={{ fontSize:'40px' }}></i>
+        </div>
+    )
+}
+
+
+
+
 export {
     Header,
-    Footer
+    Footer,
+    Loader
 }

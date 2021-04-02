@@ -5,29 +5,18 @@ import 'react-slideshow-image/dist/styles.css'
 
 const Slider = () => {
 
-    const [images, setImages] = useState([]);
-
-    const imageExists = path => {
-        var img = new Image();
-        img.src = path;
-        return img.height != 0;
-    }
-
-    useEffect(() => {
-        let i = 1;
-        let files = [];
-        while(true){
-            let path = `/assets/images/${i++}.jpg`;
-            if(!imageExists(path)) break;
-            files.push(path);
-        }
-        setImages(files);
-    }, []);
+    const [images, setImages] = useState([
+        `/assets/images/1.jpg`,
+        `/assets/images/2.jpg`,
+        `/assets/images/3.jpg`,
+        `/assets/images/4.jpg` 
+    ]);
 
     if(images.length === 0){
         return null;
     } 
     else{
+        console.log(images);
         return(
             <div className="slide-container">
                 <Slide>
